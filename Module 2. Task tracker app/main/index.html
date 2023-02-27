@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task tracker app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="task_card border">
+            <div class="task_card-head">
+            </div>
+            <div class="body_wrapper">
+                <header class="flex-dir_col">
+                    <h2 class="header_title flex ">To-Do List</h2>
+
+                    <form id="new-task_form" class="flex flex-dir_col ">
+                        <label for="new-task_input">
+                            <input type="text" class="new-task_input border" placeholder="What do you have planned?" />
+                            <div class="submit_button flex">
+                                <label for="new-task_create">
+                                    <input type="button" id="new-task_create" value="+" />
+                                    <label for="new-task_submit">
+                                        <input type="submit" id="new-task_submit" value="Add" />
+                                    </label>
+                                </label>
+                            </div>
+                    </form>
+                </header>
+                <main>
+                    <div class="regulate_wrapper">
+                        <div class="regulate">
+                            <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2.5" width="2.5" height="12.5" fill="#C4C4C4"/>
+                                <rect x="10" y="3.75" width="2.5" height="7.5" transform="rotate(-90 10 3.75)" fill="#C4C4C4"/>
+                                <rect x="10" y="8.75" width="2.5" height="10" transform="rotate(-90 10 8.75)" fill="#C4C4C4"/>
+                                <rect x="10" y="13.75" width="2.5" height="15" transform="rotate(-90 10 13.75)" fill="#C4C4C4"/>
+                                <path d="M3.75 15L0.502405 10.3125L6.9976 10.3125L3.75 15Z" fill="#C4C4C4"/>
+                                </svg>
+                        </div>
+                    </div>
+                    <section class="task-list ">
+                        <div id="tasks">
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
